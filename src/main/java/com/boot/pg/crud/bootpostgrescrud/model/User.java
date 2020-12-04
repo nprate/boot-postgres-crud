@@ -20,6 +20,7 @@ public class User {
 	public void setId(long id) {
 		this.id = id;
 	}
+	
 	public String getFirst_name() {
 		return first_name;
 	}
@@ -33,6 +34,11 @@ public class User {
 		this.last_name = last_name;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", first_name=" + first_name + ", last_name=" + last_name + "]";
+	}
 	
 
 }

@@ -24,7 +24,12 @@ public class BootPostgresCrudApplication {
 		
 		System.out.println("\n All User==================================\n");
 		List<User> userList = userDao.findAll();
-		userList.forEach(data -> System.out.println(data.getId() + " | " + data.getFirst_name() + " | " + data.getLast_name()));
+		/*
+		 * userList.forEach(data -> System.out.println(data.getId() + " | " +
+		 * data.getFirst_name() + " | " + data.getLast_name()));
+		 */
+		
+		userList.forEach(System.out::println);
 	}
 
 }
